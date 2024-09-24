@@ -39,46 +39,54 @@
     </main>
 
     <main>
-        <!-- Nueva Sección del Tutorial de Git -->
-        <section class="git-tutorial">
-            <h2>Cómo Utilizar Git</h2>
-            <p>En este tutorial, te guiaré a través de los pasos básicos para utilizar Git, desde la inicialización de un repositorio hasta la creación de ramas y la conexión a un repositorio remoto en GitHub.</p>
+        <section id="tutorial-git">
+            <h2>Tutorial de Git</h2>
+            
+            <!-- Paso 1: Inicializar el repositorio -->
+            <article>
+                <h3>Paso 1: Inicialización del Repositorio</h3>
+                <p>Para comenzar a usar Git, primero debemos inicializar un repositorio local en nuestro proyecto. Esto se hace con el siguiente comando:</p>
+                <pre><code>git init</code></pre>
+                <p>Este comando crea un repositorio Git vacío en tu carpeta de proyecto, lo que te permite empezar a rastrear cambios.</p>
+                <!-- Aquí puedes agregar una captura de pantalla -->
+                <img src="capturas/inicializar repositorio.png" alt="Inicializar repositorio" class="tutorial-img">
+            </article>
+            
+            <!-- Paso 2: Crear una rama -->
+            <article>
+                <h3>Paso 2: Creación de Ramas (Branch)</h3>
+                <p>Las ramas permiten desarrollar nuevas funcionalidades sin afectar el código principal. Para crear una nueva rama usamos:</p>
+                <pre><code>git checkout -b nombre-rama</code></pre>
+                <p>Esto creará una nueva rama y te moverá a ella. Aquí un ejemplo:</p>
+                <pre><code>git checkout -b feature/master</code></pre>
+                <!-- Aquí puedes agregar una captura de pantalla -->
+                <img src="capturas/crear rama.png" alt="Creación de ramas" class="tutorial-img">
+            </article>
 
-            <h2>1. Inicialización del Repositorio Local</h2>
-            <p>Lo primero que debemos hacer es inicializar un repositorio local. Abre tu terminal y navega al directorio donde deseas crear tu proyecto. Luego, ejecuta el siguiente comando:</p>
-            <pre><code>$ git init</code></pre>
-            <p>Este comando crea un nuevo repositorio Git en tu directorio actual. Puedes verificar que se ha creado correctamente revisando el contenido del directorio:</p>
-            <pre><code>$ ls -a</code></pre>
-            <p>Deberías ver una carpeta oculta llamada <code>.git</code>, que contiene toda la configuración de Git para este proyecto.</p>
+            <!-- Paso 3: Hacer commits -->
+            <article>
+                <h3>Paso 3: Hacer Commits</h3>
+                <p>Un commit guarda los cambios realizados en tu proyecto. Para hacer un commit, primero añade los archivos al área de preparación:</p>
+                <pre><code>git add .</code></pre>
+                <p>Luego, confirma los cambios con:</p>
+                <pre><code>git commit -m "Mensaje descriptivo"</code></pre>
+                <!-- Aquí puedes agregar una captura de pantalla -->
+                <img src="capturas/hacer commit.png" alt="Hacer commits" class="tutorial-img">
+            </article>
 
-            <img src="capturas/inicializar repositorio.png" alt="Inicializar un repositorio en Git" class="screenshot">
-        
-
-            <h2>2. Creación de Ramas (Branches)</h2>
-            <p>Una de las características más poderosas de Git es la capacidad de trabajar con ramas. Las ramas te permiten trabajar en nuevas funcionalidades sin afectar la rama principal (<code>main</code>). Para crear una nueva rama, usa el siguiente comando:</p>
-            <pre><code>$ git branch nombre-de-la-rama</code></pre>
-            <p>Para cambiar a esa nueva rama, usa:</p>
-            <pre><code>$ git checkout nombre-de-la-rama</code></pre>
-            <p>También puedes crear y cambiar a una nueva rama en un solo paso:</p>
-            <pre><code>$ git checkout -b nombre-de-la-rama</code></pre>
-
-            <img src="capturas/segundo paso.png" alt="Crear una rama en Git" class="screenshot">
-
-            <p>Una vez que termines de trabajar en tu rama, puedes combinarla con la rama principal (<code>main</code>) utilizando el comando <code>merge</code>:</p>
-            <pre><code>$ git checkout main
-$ git merge nombre-de-la-rama</code></pre>
-
-            <h2>3. Conectar el Repositorio Local con un Repositorio Remoto</h2>
-            <p>Ahora que ya tienes un repositorio local, puedes conectarlo a un repositorio remoto en GitHub para colaborar con otras personas o simplemente para hacer un respaldo. Para ello, primero crea un repositorio en GitHub, luego conecta tu repositorio local al remoto con los siguientes comandos:</p>
-            <pre><code>$ git remote add origin https://github.com/tu-usuario/tu-repositorio.git
-$ git push -u origin main</code></pre>
-
-            <img src="capturas/conectar repositorio.png" alt="Conectar a un repositorio remoto" class="screenshot">
-
-            <p>Ahora, cada vez que realices cambios en tu proyecto, puedes subirlos a GitHub usando:</p>
-            <pre><code>$ git push</code></pre>
+            <!-- Paso 4: Subir el repositorio a GitHub -->
+            <article>
+                <h3>Paso 4: Conectar a un Repositorio Remoto y Subir a GitHub</h3>
+                <p>Para conectar tu repositorio local con GitHub, debes agregar un remoto. Usa este comando, reemplazando el enlace por el de tu repositorio:</p>
+                <pre><code>git remote add origin https://github.com/tu-usuario/tu-repo.git</code></pre>
+                <p>Luego, sube los cambios a GitHub con:</p>
+                <p></p>
+                <pre><code>git push -u origin nombre-rama</code></pre>
+                <!-- Aquí puedes agregar una captura de pantalla -->
+                <img src="capturas/conectar repositorio.png" alt="conectar repositorio a GitHub" class="tutorial-img">
+                <img src="capturas/subir git.png" alt="subir repositorio">
+            </article>
         </section>
-        <!-- Fin de la Sección del Tutorial de Git -->
 
     </main>
 

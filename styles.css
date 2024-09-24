@@ -88,83 +88,90 @@ footer {
         height: 100px;
     }
 }
-/* General Styles */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f9;
     color: #333;
-    background-color: #f4f4f4;
 }
 
+/* Encabezado */
 header {
     background-color: #4CAF50;
     color: white;
+    padding: 15px 0;
     text-align: center;
-    padding: 10px 0;
 }
 
-.profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    margin: 10px 0;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secciones */
 main {
     padding: 20px;
 }
 
-.about-me, .git-tutorial {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+h2 {
+    color: #4CAF50;
 }
 
-pre, code {
-    background-color: #f4f4f4;
+h3 {
+    color: #333;
+}
+
+/* Estilos para las imágenes */
+.perfil {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.tutorial-img {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Estilos para código */
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
     padding: 10px;
-    border-radius: 5px;
     overflow-x: auto;
-    font-family: "Courier New", Courier, monospace;
 }
 
-.screenshot {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+code {
+    color: #d6336c;
+    font-family: 'Courier New', Courier, monospace;
 }
 
+/* Pie de página */
 footer {
-    background-color: #4CAF50;
-    color: white;
     text-align: center;
+    background-color: #333;
+    color: white;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .profile-pic {
-        width: 100px;
-        height: 100px;
-    }
-}
-
