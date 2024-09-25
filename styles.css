@@ -175,3 +175,14 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* Espaciado adicional para las imágenes */
+.tutorial-img {
+    display: block; /* Para asegurar que se comporten como bloques */
+    margin: 20px auto; /* Añade un margen de 20px arriba y abajo */
+    max-width: 90%; /* Ajusta el tamaño máximo de la imagen al 90% del contenedor */
+}
+
+/* Espaciado entre los artículos */
+article {
+    margin-bottom: 40px; /* Añade un margen de 40px entre artículos */
+}
